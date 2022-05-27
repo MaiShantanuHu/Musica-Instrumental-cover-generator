@@ -1,0 +1,303 @@
+.App {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent-div {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/bg-1.jpg");
+}
+
+.child-div {
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 20px 50px grey;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  /* background-color: tomato; */
+  width: 100%;
+  /* border: 2px red solid; */
+}
+
+.image-size {
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+}
+
+.inputButton {
+  background-color: #d3d3d3;
+  border: none;
+  color: black;
+  padding: 15px 47px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-left: 3.5em;
+}
+
+.loginButton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 119px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-left: 3.5em;
+}
+
+.loginButton:hover {
+  background: #fff;
+  border: 2px solid #535353;
+  color: #000;
+  transition: all 1s ease;
+}
+
+.loginTitle {
+  margin-left: 1em;
+  padding: 1em;
+  font-size: 2.2em;
+}
+
+.createAccount {
+  /* margin-left: 1em; */
+  padding-left: 5.5em;
+  align-content: center;
+}
+
+.signupTitle {
+  margin-left: 0.9em;
+
+  padding: 1em;
+  font-size: 2em;
+  margin: 0px;
+}
+
+.signupButton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 104px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-left: 3.5em;
+}
+
+.signupButton:hover {
+  background: #fff;
+  border: 2px solid #535353;
+  color: #000;
+  transition: all 1s ease;
+}
+
+.loginImage {
+  height: 15rem;
+  margin-left: 4rem;
+  margin-top: 7.5rem;
+  /* border: 2px blue solid; */
+}
+
+.categoryNav {
+  display: flex;
+  justify-content: space-between;
+  width: 19rem;
+  /* border: 2px red solid; */
+  font-size: 1.5rem;
+}
+
+.logo {
+  height: "3.5rem";
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.logo {
+  transition: all 1s;
+  transform-origin: 50% 50%;
+}
+
+.navLogoutButton:hover {
+  transform: scale(1.2);
+}
+
+.navLogoutButton {
+  transition: all 1s;
+  transform-origin: 50% 50%;
+}
+
+.navList {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7rem;
+}
+
+.active_class {
+  border-bottom: 5px yellow solid;
+  font-size: 500px;
+}
+
+.rightNav {
+  display: flex;
+  width: 9rem;
+  justify-content: space-between;
+  /* border: 2px red solid; */
+  height: 3.5rem;
+  padding-top: 1.5rem;
+}
+
+.banner_voilin {
+  background-image: url("./assets/violin.png");
+  height: 31em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.banner_flute {
+  background-image: url("./assets/flute.jpg");
+  height: 31em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.banner_trumpet {
+  background-image: url("./assets/trumpet3.jpg");
+  height: 31em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+[type="file"] {
+  color: #878787;
+}
+[type="file"]::-webkit-file-upload-button {
+  background: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+  padding: 15px 80px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+[type="file"]::-webkit-file-upload-button:hover {
+  background: #fff;
+  border: 2px solid #535353;
+  color: #000;
+}
+
+.uploadSongButton:hover {
+  background: #fff;
+  border: 2px solid black;
+  color: black;
+  transition: all 1s ease;
+}
+
+.uploadSongButton {
+  background-color: black;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 10px;
+  width: 20em;
+}
+
+.convertSongButton {
+  background-color: black;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 15px;
+  width: 20em;
+  margin-left: 14rem;
+}
+
+.convertSongButton:hover {
+  background: #fff;
+  border: 2px solid black;
+  color: black;
+  transition: all 1s ease;
+}
+
+.convertButton {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.uploadButton {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.active {
+  color: #4b4b4b;
+}
+
+audio {
+  display: block;
+  margin: auto;
+  margin-top: 3em;
+  width: 60%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: lightgrey;
+}
